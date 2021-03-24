@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <meta name="description" content="This is a practice code for the CSS assignment, Disappearing Ninja.">
+       <title>Disappearing Ninja</title>
+       <link rel="stylesheet" type="text/css" href="disappearing-ninja-style.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("img").click(function() {
+                    $(this).hide();
+                });
+                $("button").click(function() {
+                    $("img").show();
+                });
+            });
+         </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <img src="git-images/github.jpg" alt="">
+                <h1>Disappearing Ninja</h1>
+                <img src="git-images/catandninja.png" alt="" id="catandninja">
+            </div>
+            <div id="imageContainer">
+                <div>
+                    <div><img src="git-images/dojocat.jpg" alt="" class="whiteBlueBackground"></div>
+                    <div class="imgTwoAndFour middleImg"><img src="git-images/heisencat.png" alt="" class="pinkBackground"></div>
+                    <div><img src="git-images/linkcat.png" alt="" class="whiteBlueBackground"></div>
+                    <div class="imgTwoAndFour"><img src="git-images/ironcat.png" alt="" class="pinkBackground"></div>
+                </div>
+                <div>
+                    <div><img src="git-images/coder2.jpg" alt="" class="whiteBlueBackground"></div>
+                    <div class="imgTwoAndFour middleImg"><img src="git-images/riddlocat.png" alt="" class="pinkBackground"></div>
+                    <div><img src="git-images/chellocat.jpg" alt="" class="whiteBlueBackground"></div>
+                    <div class="imgTwoAndFour"><img src="git-images/stormtroopocat.png" alt="" class="pinkBackground"></div>
+                </div>
+            </div>
+            <button>Restore</button>
+        </div><!-- end of wrapper -->
+    </body>
+</html>
