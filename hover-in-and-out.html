@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <meta name="description" content="This is a practice code for the CSS assignment, Disappearing Ninja.">
+       <title>Hover In/Out</title>
+       <link rel="stylesheet" type="text/css" href="hover-in-and-out-style.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("img").hover(function(){
+                    var hoverInImg = $(this).attr("data-alt-src");
+                    var hoverOutImg = $(this).attr("src");
+					$(this).attr("src", hoverInImg);
+                    $(this).attr("data-alt-src", hoverOutImg);
+				}, function(){
+                    hoverOutImg = $(this).attr("data-alt-src");
+                    hoverInImg = $(this).attr("src");
+					$(this).attr("src", hoverOutImg);
+                    $(this).attr("data-alt-src", hoverInImg);
+				});
+            });
+         </script>
+    </head>
+    <body>
+        <div class="imageContainer">
+            <div><img src="git-images/adventure-cat.png" data-alt-src="git-images/defunktocat.png"></div>
+            <div class="imgTwoAndFour middleImg"><img src="git-images/aidorucat.png" data-alt-src="git-images/jean-luc-picat.jpg"></div>
+            <div><img src="git-images/cherry.jpg" data-alt-src="git-images/kantana.jpg"></div>
+            <div class="imgTwoAndFour"><img src="git-images/cooler.png" data-alt-src="git-images/mario.png"></div>
+        </div>
+    </body>
+</html>

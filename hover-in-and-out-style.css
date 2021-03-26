@@ -1,0 +1,25 @@
+/*CSS reset settings here*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.imageContainer{
+    width: 970px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.imageContainer div{
+    width: 180px;
+    height: 180px;
+    display: inline-block;
+}
+.imageContainer img{
+    width: 150px;
+    border: 5px solid black;
+}
+.imgTwoAndFour{
+    margin-left: 25px;
+}
+.middleImg{
+    margin-right: 25px;
+}
